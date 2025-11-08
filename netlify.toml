@@ -1,0 +1,6 @@
+[build]
+  # No build command required for this simple static site
+  publish = "."
+
+# If you later add a static-site generator, set `command` to the build step
+# and `publish` to the build output directory (for example: "npm run build" -> "dist").

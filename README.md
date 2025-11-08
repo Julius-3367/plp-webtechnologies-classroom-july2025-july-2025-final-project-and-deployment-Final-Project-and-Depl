@@ -88,3 +88,39 @@ Deploy your project and confirm that:
 * Clean, well-organized, and commented code
 * Successful live deployment with a working link
 * Evidence of following best practices
+
+---
+
+## 🚀 Deploying to Netlify (quick guide)
+
+This project is a static HTML/CSS/JS site and can be deployed to Netlify in a few clicks.
+
+Recommended Netlify settings for this repository:
+
+- Build command: (leave empty)
+- Publish directory: `.` (root of repository)
+
+Steps to deploy via the Netlify web UI:
+
+1. Sign in to Netlify and choose "New site from Git".
+2. Connect your GitHub account and select this repository: `Julius-3367/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl`.
+3. For Branch to deploy: choose `main`.
+4. Leave Build command empty and set Publish directory to `.` (or just leave default if Netlify auto-detects).
+5. Click "Deploy site" — Netlify will build (no build step) and publish the repository root.
+
+Optional: deploy with the Netlify CLI (handy for testing):
+
+```bash
+# install netlify CLI if you don't have it
+npm install -g netlify-cli
+
+# run an open deploy (not production) to preview
+netlify deploy --dir=. --site=<your-site-id>
+
+# to do a production deploy (after linking the site)
+netlify deploy --prod --dir=.
+```
+
+Netlify config file included: `netlify.toml` (publishes from repo root).
+
+After deployment, copy the provided Netlify URL into this README under "live URL" so it's easy to find.
