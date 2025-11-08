@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Korir K Julius</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Korir K Julius</a>
+      <button id="navToggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">☰</button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.linkedin.com/in/korir-julius-499b01215" target="_blank" rel="noopener">LinkedIn</a>
+        <span style="margin:0 .5rem; color:var(--muted)">•</span>
+        <a href="https://github.com/Julius-3367" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Get in touch</h1>
+    <p>I'm open to internships, contract work, and collaborations. Reach me via email, phone, or the contact form below.</p>
+
+    <section class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:korirjulius001@gmail.com">korirjulius001@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+254707670780">+254 707 670 780</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/korir-julius-499b01215" target="_blank" rel="noopener">Korir K Julius</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Julius-3367" target="_blank" rel="noopener">@Julius-3367</a></p>
+    </section>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Send</button>
+      </div>
+
+      <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Korir K Julius.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
